@@ -121,4 +121,9 @@ db.books.createIndex({ author: 1, published_year: -1 })
 db.books.find({ title: "1984" }).explain("executionStats")
 db.books.find({ author: "George Orwell", published_year: { $gt: 1940 } }).explain("executionStats")
 
+## SAMPLE DATA
+![]([images/insert_script_output.png](https://github.com/Isaac-mutuma/week-1-mongodb-fundamentals-assignment-Isaac-mutuma/blob/main/screenshots/01.png))
+
+
+
 
