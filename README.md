@@ -124,6 +124,9 @@ db.books.find({ author: "George Orwell", published_year: { $gt: 1940 } }).explai
 ## SAMPLE DATA
 ![sample data](screenshots/01.png)
 
+## MONGODB COMPASS
+![sample data](screenshots/02.png)
+
 
 
 
