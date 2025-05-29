@@ -47,18 +47,22 @@ Use MongoDB Compass or the mongo shell.
 
 ## Basic CRUD & Projection Queries;
 // Find all Fiction books
+
 db.books.find({ genre: "Fiction" })
 
 // Find books published after 1950
+
 db.books.find({ published_year: { $gt: 1950 } })
 
 // Find books by George Orwell
 db.books.find({ author: "George Orwell" })
 
 // Find books in stock and after 2010
+
 db.books.find({ in_stock: true, published_year: { $gt: 2010 } })
 
 // Update price of "The Great Gatsby"
+
 db.books.updateOne({ title: "The Great Gatsby" }, { $set: { price: 11.99 } })
 
 // Delete "Moby Dick"
